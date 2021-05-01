@@ -19,6 +19,12 @@ namespace StackAndQueue
             //Displaying stack.
             stackOBJ.DisplayStackElements();
 
+            Console.WriteLine();
+            stackOBJ.Peek();
+            stackOBJ.Pop();
+            stackOBJ.IsEmpty();
+            stackOBJ.DisplayStackElements();
+
         }
     }
 }
