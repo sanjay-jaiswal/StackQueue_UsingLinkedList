@@ -30,6 +30,19 @@ namespace StackAndQueue
         }
 
         /// <summary>
+        /// Dequeue elements from first.
+        /// </summary>
+        /// <returns></returns>
+        internal Node Dequeue()
+        {
+            if (this.head == null)
+                return null;
+            this.head = this.head.next;
+            return this.head;
+
+        }
+
+        /// <summary>
         /// Display queue elements.
         /// </summary>
         internal void Display()
@@ -42,7 +55,7 @@ namespace StackAndQueue
             }
             while (temp != null)
             {
-                Console.Write("Queue elements are : "+temp.data + " ");
+                Console.Write("Queue elements are : "+temp.data + " \n");
                 temp = temp.next;
             }
         }

@@ -34,6 +34,9 @@ namespace StackAndQueue
             queueOBJ.Enqueue(12);
             queueOBJ.Display();
 
+            queueOBJ.Dequeue();
+            queueOBJ.Display();
+
 
 
 
